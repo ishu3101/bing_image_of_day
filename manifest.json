@@ -1,0 +1,17 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "bing.html"
+   },
+   "description": "Display Bing Image of the Day as Wallpaper when you open a new tab",
+   "content_scripts": [
+      {
+         "matches": ["https://www.bing.com/*"],
+         "js": ["content_script.js"]
+      }
+   ],
+   "manifest_version": 3,
+   "name": "Bing Image of the Day in a new tab",
+   "permissions": [ "tabs", "storage"],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0"
+}
